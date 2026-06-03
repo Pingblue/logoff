@@ -1,10 +1,90 @@
+/* Toolbar logoff button icon */
 div#logoff {background-image: url(./images/logoff.png);}
 
+/* Dialog header - single icon, no repeat */
+div#logoffDlg div.dlg-header {
+    background-image: url(./images/logoff2.png);
+    background-repeat: no-repeat;
+    background-position: 6px center;
+    background-size: 16px 16px;
+}
+
+/* Dialog sizing */
 div#logoffDlg {width: 410px;}
-div#logoffDlg div.dlg-header {background-image: url(./images/logoff2.png);}
-div#logoffDlg-content {line-height: 16px; margin: 5px; padding: 5px; width: 390px;}
+
+/* Dialog content */
+div#logoffDlg-content {
+    line-height: 20px;
+    margin: 10px;
+    padding: 8px;
+    width: 370px;
+    font-size: 13px;
+}
 div#logoffDlg-content div {margin-top: 5px;}
 div#logoffDlg-content div label {width: 80px; display: inline-block;}
 div#logoffDlg-content div span {color: #FF0000;}
 div#logoffDlg-content div select {width: 125px; margin: 0 4px;}
-div#logoffDlg-buttons input {width: 120px;}
+
+/* Button container */
+div#logoffDlg-buttons {
+    padding: 8px 10px;
+    text-align: right;
+}
+
+/* Clean buttons - fully self-contained, no inherited icon styles */
+input.logoff-btn {
+    display: inline-block;
+    width: auto !important;
+    min-width: 90px;
+    padding: 4px 14px;
+    margin-left: 6px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: #222 !important;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: #f0f0f0 !important;
+    background-image: none !important;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    text-align: center;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+input.logoff-btn::before,
+input.logoff-btn::after {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+}
+
+input.logoff-btn:hover {
+    background: #e0e0e0 !important;
+    background-image: none !important;
+    border-color: #888;
+}
+
+input.logoff-btn:active {
+    background: #d0d0d0 !important;
+    background-image: none !important;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+input.logoff-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Primary (Log off) button - slightly different color */
+input.logoff-btn-primary {
+    background: #e8e8e8 !important;
+    background-image: none !important;
+    border-color: #999;
+    font-weight: bold;
+}
+
+input.logoff-btn-primary:hover {
+    background: #d8d8d8 !important;
+    background-image: none !important;
+}
