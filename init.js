@@ -10,7 +10,7 @@ plugin.onLangLoaded = function()
 
     if (plugin.allowSwitch) {
         var options = "";
-        for (i in plugin.users)
+        for (var i in plugin.users)
             options += "<option value=\"" + plugin.users[i] + "\">" + plugin.users[i] + "</option>";
 
         var switchUser = "";
