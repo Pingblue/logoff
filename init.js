@@ -93,7 +93,7 @@ plugin.onLangLoaded = function()
                 xmlhttp.onreadystatechange = function() { if (this.readyState == 4) document.location = plugin.logoffURL; };
                 xmlhttp.send(null);
                 window.logoffxmlhttp = xmlhttp;
-                window.setTimeout("logoffxmlhttp.abort()", plugin.abortMs);
+                window.setTimeout(function() { xmlhttp.abort(); }, plugin.abortMs);
             }
         } catch (e) { alert("Error: " + e); }
     });
