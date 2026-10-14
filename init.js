@@ -4,7 +4,7 @@ plugin.loadLang();
 plugin.onLangLoaded = function()
 {
     var before = (theWebUI.systemInfo.rTorrent.started ? "add" : "settings");
-    this.addButtonToToolbar("logoff", theUILang.logoff + " (" + plugin.me + ")", "theDialogManager.show('logoffDlg')", before);
+    this.addButtonToToolbar("logoff", theUILang.logoff + " (" + plugin.me + ")", function() { theDialogManager.show('logoffDlg'); }, before);
     this.addSeparatorToToolbar(before);
     var multi = false;
 
