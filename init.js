@@ -35,9 +35,9 @@ plugin.onLangLoaded = function()
             (multi ? theUILang.logoffSwitchPrompt + switchUser : theUILang.logoffPrompt)+
         "</div>"+
         "<div id=\"logoffDlg-buttons\" class=\"aright buttons-list\">"+
-            (multi ? "<input type=\"button\" class=\"logoff-btn\" value=\"" + theUILang.logoffSwitch + "\" id=\"logoffSwitch\">" : "")+
-            "<input type=\"button\" class=\"logoff-btn logoff-btn-primary\" value=\"" + theUILang.logoff + "\" id=\"logoffComplete\">"+
-            "<input type=\"button\" class=\"logoff-btn\" value=\"Cancel\" id=\"logoffCancel\" onclick=\"theDialogManager.hide('logoffDlg');\">"+
+            (multi ? "<input type=\"button\" class=\"Button\" value=\"" + theUILang.logoffSwitch + "\" id=\"logoffSwitch\">" : "")+
+            "<input type=\"button\" class=\"Button\" value=\"" + theUILang.logoff + "\" id=\"logoffComplete\">"+
+            "<input type=\"button\" class=\"Button\" value=\"Cancel\" id=\"logoffCancel\" onclick=\"theDialogManager.hide('logoffDlg');\">"+
         "</div>",
     true);
 
